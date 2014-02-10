@@ -1,40 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:build="http://schemas.microsoft.com/developer/appx/2012/build" IgnorableNamespaces="build">
-  <Identity Name="ebf3c1b4-7242-4811-9ec8-9352239cb333" Version="1.0.0.0" Publisher="CN=stephsau" />
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+
+  <Identity
+    Name="d4bad8e8-6ca7-4574-a95a-8bb7a3d9c6d9"
+    Version="1.0.0.0"
+    Publisher="CN=stephsau" />
+
   <Properties>
-    <DisplayName>XCorpW8</DisplayName>
+    <DisplayName>App2</DisplayName>
     <PublisherDisplayName>stephsau</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
+
   <Prerequisites>
     <OSMinVersion>6.3.0</OSMinVersion>
     <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
   </Prerequisites>
+
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
+
   <Applications>
-    <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="XCorp" Description="Demo for institutional App" ForegroundText="light" BackgroundColor="#464646" Square150x150Logo="images\Logo.png" Square30x30Logo="images\SmallLogo.png">
-        <m2:DefaultTile ShortName="XCorp">
-          <m2:ShowNameOnTiles>
-            <m2:ShowOn Tile="square150x150Logo" />
-          </m2:ShowNameOnTiles>
-        </m2:DefaultTile>
-        <m2:SplashScreen Image="images\SplashScreen.png" BackgroundColor="white" />
-        <m2:InitialRotationPreference>
-          <m2:Rotation Preference="portrait" />
-          <m2:Rotation Preference="landscape" />
-          <m2:Rotation Preference="portraitFlipped" />
-          <m2:Rotation Preference="landscapeFlipped" />
-        </m2:InitialRotationPreference>
+    <Application 
+      Id="App"
+      StartPage="default.html">
+
+      <m2:VisualElements
+        DisplayName="App2"
+        Description="App2"
+        ForegroundText="light"
+        BackgroundColor="#464646"
+        Square150x150Logo="images\Logo.png"
+        Square30x30Logo="images\SmallLogo.png">
+
+        <m2:SplashScreen Image="images\splashscreen.png" />
+
       </m2:VisualElements>
     </Application>
   </Applications>
+
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-  <build:Metadata>
-    <build:Item Name="Blend" Version="12.0.41002.1" />
-  </build:Metadata>
+
 </Package>
